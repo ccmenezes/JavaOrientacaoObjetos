@@ -1,6 +1,6 @@
 package javaorientacaobjetos.main;
 
-public class Conta {
+abstract class Conta {
 	
 	protected double saldo;
 	
@@ -28,8 +28,8 @@ public class Conta {
 	    this.saldo -= valor;
 	}
 	
-	public void atualiza(double taxa) {
+	public abstract void atualiza(double taxaSelic); /*{
         this.saldo += this.saldo * taxa;
-    }
+    }*/
 	
 }

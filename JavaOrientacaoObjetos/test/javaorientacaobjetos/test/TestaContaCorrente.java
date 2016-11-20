@@ -5,12 +5,11 @@ import static org.junit.Assert.*;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
-import javaorientacaobjetos.main.Conta;
 import javaorientacaobjetos.main.ContaCorrente;
 
 public class TestaContaCorrente {
 
-	private static Conta conta;
+	private static ContaCorrente conta;
 	
 	@BeforeClass
 	public static void setUpBeforeClass() throws Exception {
