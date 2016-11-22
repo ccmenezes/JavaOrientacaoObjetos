@@ -28,7 +28,7 @@ abstract class Conta {
 	    this.saldo -= valor;
 	}
 	
-	public abstract void atualiza(double taxaSelic); /*{
+	public abstract void atualizar(double taxaSelic); /*{
         this.saldo += this.saldo * taxa;
     }*/
 	

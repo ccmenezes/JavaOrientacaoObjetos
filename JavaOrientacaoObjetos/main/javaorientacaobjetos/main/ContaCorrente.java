@@ -3,8 +3,8 @@ package javaorientacaobjetos.main;
 public class ContaCorrente extends Conta{
 	
 	@Override
-	public void atualiza(double taxa) {
-		this.setSaldo(taxa * 2);
+	public void atualizar(double taxa) {
+		this.saldo += this.saldo * taxa * 2;
 	}
 
 }

@@ -22,7 +22,7 @@ public class TestaAtualizadorDeContas {
 	@Test
 	public void test() {
 		conta.setSaldo(200.0);
-		atualiza.roda(conta);
+		atualiza.rodar(conta);
 		assertEquals(260.0, conta.getSaldo(), 0.00);
 	}
 
