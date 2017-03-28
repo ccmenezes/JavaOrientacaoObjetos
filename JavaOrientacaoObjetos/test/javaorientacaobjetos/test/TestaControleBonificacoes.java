@@ -11,18 +11,20 @@ import javaorientacaobjetos.main.Gerente;
 public class TestaControleBonificacoes {
 	
 	private static ControleDeBonificacoes bonus;
-	private static Gerente f;
+	private static Gerente gerente;
 
 	@BeforeClass
 	public static void setUpBeforeClass() throws Exception {
 		bonus = new ControleDeBonificacoes();
-		f = new Gerente();
+		gerente = new Gerente();
 	}
 
 	@Test
 	public void testGetTotalDeBonificacoes() {
-		f.setSalario(4700.00);
-		bonus.registra(f);
+		gerente.setNome("Maria");
+		gerente.setSalario(4700.00);
+		bonus.registra(gerente);
+		bonus.mostrarFuncionarioBonificado(gerente);
 		assertEquals(7580.00, bonus.getTotalDeBonificacoes(), 0.00);
 	}
 

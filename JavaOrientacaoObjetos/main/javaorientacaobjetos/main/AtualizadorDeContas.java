@@ -2,7 +2,7 @@ package javaorientacaobjetos.main;
 
 public class AtualizadorDeContas {
 	
-	 private double saldoTotal = 0;
+	private double saldoTotal = 0;
 	private double selic;
 
 	public AtualizadorDeContas(double selic) {
@@ -10,19 +10,12 @@ public class AtualizadorDeContas {
 	}
 	 
 	public void rodar(Conta c) {
-		 imprimirSaldo("Saldo anterior: ", c);
-	     c.atualizar(this.selic);
-	     imprimirSaldo("Saldo atualizado: ", c);
+		 c.atualizar(this.selic);
 	     this.saldoTotal += c.getSaldo();
-	 }
-	 
-	 public void imprimirSaldo(String momentoSaldo, Conta c){
-		 System.out.println("===============================");
-	     System.out.println(momentoSaldo + c.getSaldo());		 
-	 }
-	 
-	 public double getSaldoTotal() {
+	}
+			 
+	public double getSaldoTotal() {
 	    return this.saldoTotal;
-	 }
+	}
 	    
 }
